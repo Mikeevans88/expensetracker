@@ -20,7 +20,7 @@ form {
 
 table {
 	width: 100%;
-	border: 1px solid black;
+	box-shadow: 1px 1px 0px 0px black;
 	background-color: rgb(166, 227, 252);
 	color: white;
 }
@@ -38,6 +38,5 @@ td {
 .deletebtn {
 	background-color: white;
 	color: black;
-	border: solid 1px white;
-	border-radius: 100%;
+	box-shadow: 1px 1px 0px 0px black;
 }

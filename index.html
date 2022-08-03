@@ -7,26 +7,39 @@
     <title>Expense Tracker</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/expensetracker/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container col-10 class text-center border rounded">
-    <h1>Expense Tracker</h1>
-    <p>Please enter your purchases below to track your spending</p>
-<form>
-    <div class="form-row col-9 mx-auto">
-      <div class="col">
-        <input type="text" name="description" class="form-control" placeholder="Description" required>
+        <div class="col">
+            <div id="wrap" class="container text-center">
+                <h2>Expense Tracker</h2>
+                <p>Please enter your purchases below to track your spending</p>
+            <form>
+                <div class="form-row col">
+                  <div class="col">
+                    <input type="text" id="description" name="description" class="form-control" placeholder="Description" required>
+                  </div>
+                  <div class="col">
+                    <input type="date" id="date" name="date" class="form-control" placeholder="Date" required>
+                  </div>
+                  <div class="col">
+                    <input type="number" id="cost" name="cost" class="form-control" placeholder="$$$" required>
+                  </div>
+                  <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+              <div>
+                <table id="output" class=" col ">
+                      <th>Description</th>
+                      <th>Date</th>
+                      <th>Cost</th>
+                </table>
+                  </div>
+            </div>
+              
+        </div>
       </div>
-      <div class="col">
-        <input type="date" name="date" class="form-control" placeholder="Date" required>
-      </div>
-      <div class="col">
-        <input type="number" name="cost" class="form-control" placeholder="$$$" required>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-</div>
-  </form>
+
 
     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
